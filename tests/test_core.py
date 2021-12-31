@@ -18,5 +18,5 @@ def test_extract_contour_areas_and_output(test_image_path):
     assert out_img.shape == (200, 200, 3)
 
     out_df = pd.read_csv(out_csv_path)
-    assert len(out_df) == 40
+    assert len(out_df) == 50
     assert (out_df.columns == ['index', 'areas']).all()

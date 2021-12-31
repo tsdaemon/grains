@@ -10,4 +10,4 @@ def test_dir():
 
 @pytest.fixture
 def test_image_path(test_dir):
-    return os.path.join(test_dir, 'testdata\\testimage1.jpg')
+    return os.path.join(test_dir, os.path.join('testdata', 'testimage1.jpg'))
